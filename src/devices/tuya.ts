@@ -11249,6 +11249,9 @@ export const definitions: DefinitionWithExtend[] = [
         description: "PIR 24Ghz human presence sensor",
         fromZigbee: [tuya.fz.datapoints],
         toZigbee: [tuya.tz.datapoints],
+        whiteLabel: [
+            tuya.whitelabel("Tuya", "ZG-204ZM", "PIR + 24GHz Presence Sensor", "HOBEIAN"),
+        ],
         exposes: [
             e.presence(),
             e.enum("motion_state", ea.STATE, ["none", "large", "small", "static"]).withDescription("Motion state"),
